@@ -1,24 +1,30 @@
-# vue_docker
+# Vue Tasks SPA
 
-## Project setup
-```
-npm install
-```
+A simple Vue.js single-page application for managing tasks with Docker support.
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+## Features
 
-### Compiles and minifies for production
-```
-npm run build
-```
+- Loads tasks from JSON file
+- Marks tasks as completed
+- Persists state between page reloads
+- Docker container support
 
-### Lints and fixes files
-```
-npm run lint
-```
+## Prerequisites
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+- Node.js (if running locally without Docker)
+- Docker (if using container)
+
+## Installation
+
+### Without Docker
+
+1. Clone the repository
+2. Install dependencies: `npm install`
+3. Start development server: `npm run serve`
+
+### With Docker
+
+1. Clone the repository
+2. Build and run the container:
+   ```bash
+   docker-compose up --build
