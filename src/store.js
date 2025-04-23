@@ -4,14 +4,12 @@ import axios from 'axios'
 const tasks = ref([])
 const STORAGE_KEY = 'vue-tasks-spa'
 
-// Load from localStorage if available
 const savedState = localStorage.getItem(STORAGE_KEY)
 if (savedState) {
   tasks.value = JSON.parse(savedState)
 }
 
-export function useTasks() {
-  // Load initial tasks from JSON if not loaded yet
+export function useTasks() {  
   const loadTasks = async () => {
     if (tasks.value.length === 0) {
       try {

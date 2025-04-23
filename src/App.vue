@@ -22,7 +22,7 @@ import { onMounted, ref } from 'vue'
 import TaskList from './components/TaskList.vue'
 import { useTasks } from './store'
 
-//const { tasks, loadTasks, toggleTask, completedTasks, pendingTasks } = useTasks()
+
 const { loadTasks, toggleTask, completedTasks, pendingTasks } = useTasks()
 const loading = ref(true)
 
